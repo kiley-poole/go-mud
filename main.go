@@ -3,9 +3,11 @@ package main
 import (
 	"bufio"
 	"fmt"
+	_ "github.com/mattn/go-sqlite3"
 	"log"
 	"os"
 	"strings"
+	"db_conn"
 )
 
 var commandMap = make(map[string]func(string))
